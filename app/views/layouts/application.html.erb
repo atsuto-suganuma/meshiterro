@@ -39,9 +39,8 @@
                  <li class="">
                    <%= link_to '投稿フォーム', new_post_image_path %>
                  </li>
-                 <!-- ↓のコードは５章で正しいルーティングに書き直し -->
                  <li class="">
-                  <%= link_to 'マイページ', "#" %>
+                  <%= link_to 'マイページ', user_path(current_user.id) %>
                  </li>
                <% else %> <!-- サインインしてない場合はこれ以下エンドまでが表示されるよ -->
                  <li class="">
